@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Imersão - Opera GX</title>
+    <link rel="icon" type="image/x-icon" href="src/assets/icons/favicon.png">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebarfooter.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
+    <link rel="stylesheet" href="./src/styles/media-queries.css">
+
+    <!-- Links para trazer os ícones via CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="#">
+                    <img src="src/assets/2024-spotify-logo-icon/Spotify_Primary_Logo_RGB_White.png" alt="Logo Spotify">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a></li>
+                <li>
+                <li><a href="#">
+                        <span class="fa fa-search"></span>
+                        <span>Search</spap>
+                    </a></li>
+            </ul>
+        </nav>
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fa-book"></span>
+                    <span>Your Library</span>
+                </button>
+                <span class="fa fa-plus"></span>
+            </div>
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Create your first playlist</span>
+                    <span class="text subtitle">it's easy, we'll help you</span>
+                    <button class="section-playlist__button">Create playlist</button>
+                </div>
+            </section>
+            <section class="section-podcast">
+                <div class="section-podcast__content">
+                    <span class="text title">Let's find some podcasts to follow</span>
+                    <span class="text subtitle">We'll keep you updated on new episodes</span>
+                    <button class="section-podcast__button">Browse podcats</button>
+                </div>
+            </section>
+            <div class="other-information">
+                <div class="legal">
+                    <a href="#">Legal</a>
+                </div>
+                <div class="safety">
+                    <a href="#">Safety & Privacy Center</a>
+                </div>
+                <div class="privacy">
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="ad">
+                    <a href="#">About Ads</a>
+                </div>
+                <div class="accessibility">
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+            <div class="cookies">
+                <a href="https://www.spotify.com/legal/cookies-policy/">Cookies</a>
+            </div>
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>English</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Left Arrow">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Right Arrow">
+                    </button>
+                </div>
+                    <div class="header__search">
+                        <img src="src/assets/icons/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" placeholder="What do you want to play?">
+                    </div>
+                    <div class="download">
+                        <a href="https://open.spotify.com/download">
+                            <span class="fa fa-download"></span>
+                            <span class="text download">Install App</span>
+                        </a>
+                    </div>
+                    <div class="header__login">
+                        <button class="signup">Sign Up</button>
+                        <button class="login">Login</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="homescreen">
+            <div id="playlist">
+                <div class="homescreen__content">
+                    <div id="saudacao"></div>
+                    <div class="session">Browse all</div>
+                </div>
+                <script src="./src/script/time.js"></script>
+                <div class="offer__scrool-container">
+                    <div class="offer__list-item">
+                        <!-- CARD 1 -->
+                        <a href="" class="cards">
+                            <div class="cards card1">
+                                <img src="src/assets/playlist/1.jpeg" alt="">
+                                <span>Happy Hollidays</span>
+                            </div>
+                        </a>
+                        <!-- Card 2 -->
+                         <a href="" class="cards">
+                            <div class="cards card2">
+                                <img src="src/assets/playlist/2.png" alt="">
+                                <span>Made for you</span>
+                            </div>
+                         </a>
+                        <!-- Card 3 -->
+                         <a href="" class="cards">
+                            <div class="cards card3">
+                                <img src="src/assets/playlist/3.jpeg" alt="">
+                                <span>Discover Weekly</span>
+                            </div>
+                         </a>
+                         <!-- Card 4 -->
+                          <a href="" class="cards">
+                            <div class="cards card4">
+                                <img src="src/assets/playlist/4.jpeg" alt="">
+                                <span>Brazilian Creators</span>
+                            </div>
+                          </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="preview-waring">
+        <div class="text">
+            <p class="preview-waring__title">Preview of Spotify</p>
+            <p class="preview-waring__subtitle">Sign up to get unlimited songs and podcast without ads, no credit card needed</p>
+        </div>
+        <div class="button">
+            <button type="button">Sign Up free</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
